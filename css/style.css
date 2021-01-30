@@ -1,0 +1,28 @@
+body {
+    background-color: rgba(255, 166, 0, 0.842);
+}
+nav {
+    display: flex;
+    float: right;
+    background-color: grey;
+    border-style: solid;
+    border-color: black;
+    font-size: 20px;
+
+}
+nav ul li{
+    list-style-type: none;
+    width: 0 auto;
+    float: left;
+}
+nav ul li a{ 
+    display: block;
+    width: 150px;
+    height: 40px;
+    float: left;
+    color: orange;
+}
+main section div{
+    border-style:solid;
+    border-color: grey
+}
