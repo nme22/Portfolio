@@ -8,6 +8,7 @@ nav {
     border-style: solid;
     border-color: black;
     font-size: 20px;
+    
 
 }
 nav ul li{
@@ -22,7 +23,13 @@ nav ul li a{
     float: left;
     color: orange;
 }
+section {
+    display: flex;
+}
 main section div{
-    border-style:solid;
-    border-color: grey
+    flex-flow: column wrap; 
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    border-color: grey;
 }
