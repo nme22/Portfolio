@@ -23,6 +23,14 @@ nav ul li a{
     float: left;
     color: orange;
 }
+.background-graphic {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(https://thumbs.dreamstime.com/b/desktop-source-code-technology-background-developer-programer-coding-programming-wallpaper-computer-language-virus-124934719.jpg);
+    background-size: cover;
+    background-position:top;
+}
 section {
     display: flex;
 }
