@@ -37,6 +37,7 @@ nav ul li a{
     width: 150px;
     height: 40px;
     color: orange;
+    font-size: 25px;
 }
 .background-graphic {
     height: 300px;
@@ -59,9 +60,10 @@ main h2{
 main section{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .container{
-    flex-direction: column;
+    flex-direction: row;
     height: 200px;
     width: 200px;
     border-style: solid;
