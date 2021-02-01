@@ -55,6 +55,9 @@ main section{
     display: flex;
     flex-wrap: wrap;
 }
+.container{
+    flex-direction: column;
+}
 main section div{
     height: 200px;
     width: 200px;
@@ -70,14 +73,18 @@ aside{
 aside div{
     display:flex;
     justify-content: center;
+    
 }
 aside p{
- width: 50%;
+    width: 25%;
+    text-align: left;
+    font-size: 19px;
  
 }
 .aside-img{
     height:400px;
-    width:400px;   
+    width:400px;
+    padding-right: 10px;   
 }
 
 footer {
