@@ -36,7 +36,7 @@ nav ul li a{
     display: block;
     width: 150px;
     height: 40px;
-    color: orange;
+    color: black;
     font-size: 25px;
 }
 .background-graphic {
@@ -112,11 +112,15 @@ footer h3 {
     margin-right: 8px;
     font-size: 20px;
     font-style:italic;
-    color: orange;
+    color:black;
 }
 footer ul{
     display: flex;
     width: 60%;
-list-style: none;
-justify-content: space-around;    
+    list-style: none;
+    justify-content: space-around;    
+}
+
+footer ul a{
+    color:black;
 }
