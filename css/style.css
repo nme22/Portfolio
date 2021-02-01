@@ -7,7 +7,8 @@ html, body {
     height: 100%;
 }
 body {
-    background-color: rgba(255, 166, 0, 0.842);
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(237,158,10,1) 37%, rgba(166,165,165,1) 100%);
     display: flex;
     flex-direction: column;
 }
@@ -17,7 +18,7 @@ nav {
     justify-content: space-between;
     width: 100%;
     float: right;
-    background-color: grey;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(237,158,10,1) 37%, rgba(166,165,165,1) 100%);
     border-style: solid;
     border-color: black;
     font-size: 20px;
@@ -44,6 +45,7 @@ nav ul li a{
     background-image: url(https://thumbs.dreamstime.com/b/desktop-source-code-technology-background-developer-programer-coding-programming-wallpaper-computer-language-virus-124934719.jpg);
     background-size: cover;
     background-position:top;
+    border-style: solid;
 }
 main{
     display:flex;
@@ -51,19 +53,21 @@ main{
     flex-direction: column;
    
 }
+main h2{
+    text-align: center;
+}
 main section{
     display: flex;
     flex-wrap: wrap;
 }
 .container{
     flex-direction: column;
-}
-main section div{
     height: 200px;
     width: 200px;
     border-style: solid;
     border-color: grey;
 }
+
 aside{
     display: flex;
     flex-direction: column;
@@ -91,9 +95,10 @@ aside p{
 footer {
     display: flex;
     width: 100%;
-    background-color: grey;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(237,158,10,1) 37%, rgba(166,165,165,1) 100%);
     border-style: solid;
-    border-color: black;
+    border-width: 1px;
     font-size: 20px;
     flex-shrink: 0;
     justify-content: center;
