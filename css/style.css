@@ -84,6 +84,7 @@ aside p{
 .aside-img{
     height:400px;
     width:400px;
+    max-width:100%;
     padding-right: 10px;   
 }
 
