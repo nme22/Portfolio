@@ -61,6 +61,24 @@ main section div{
     border-style: solid;
     border-color: grey;
 }
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;    
+}
+aside div{
+    display:flex;
+    justify-content: center;
+}
+aside p{
+ width: 50%;
+ 
+}
+.aside-img{
+    height:400px;
+    width:400px;   
+}
 
 footer {
     display: flex;
