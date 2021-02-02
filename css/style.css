@@ -12,6 +12,15 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(237,158,10,1) 37%, rgb
     display: flex;
     flex-direction: column;
 }
+a:link {
+    color: black;
+}
+a:hover{
+    color: orange;
+}
+a:active{
+    color:grey
+}
 
 nav {
     display: flex;
