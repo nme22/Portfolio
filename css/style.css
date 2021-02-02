@@ -69,7 +69,7 @@ main h2{
 main section{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 .container{
     flex-direction: row;
