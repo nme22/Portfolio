@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Links the CSS to the HTML page -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Navid's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Navid's Portfolio</title> -->
 </head>
 
 <!-- Body becomes the parent of "header", "main", "aside", and "footer"  -->
@@ -13,16 +14,20 @@
     <header>
         <!-- Navbar set in the Header container -->
          <nav>
-            <h1>Navid M Ebrahimi</h1>
-            <ul>
-                <li>
-                    <a href="#About me">About me</a>
+            <h1 >Navid M Ebrahimi</h1>
+            <ul class="row">
+                <li class="col">
+                   
                 </li>
-                <li>
-                    <a href="#Work">Work</a>
+
+                <li class="col">
+                    <a href="#About me" class="badge badge-warning">About me</a>
                 </li>
-                <li>
-                    <a href="#Contact info">Contact info</a>
+                <li class="col">
+                    <a href="#Work" class="badge badge-warning">Work</a>
+                </li>
+                <li class="col">
+                    <a href="#Contact info" class="badge badge-warning">Contact info</a>
                 </li>
             </ul>
         </nav>
@@ -33,33 +38,44 @@
         <div class="background-graphic">
 
         </div>
-        <h2 id="Work"><u>Work</u></h2>
+        <h2 id="Work"><u class="badge badge-secondary">Work</u></h2>
         <br>
-        <section>
+        <section class="container">
             <!-- Placeholders were set temporarily -->
-            <div class="container">
-                <img src="https://via.placeholder.com/200">
+            <div class="row">
+                <div class="col">
+                    <img src="./images/stockOven.png" alt="Project_1" class="rounded mx-auto d-block demo-img">
+                    <a href="https://github.com/krushilnaik/StockOven" target="_blank" class="badge badge-warning">Project 1</a>
+                </div>
+
+                <div class="col">
+                    <img src="https://via.placeholder.com/200" alt="Project_2" class="rounded mx-auto d-block demo-img">
+                    <a src="https://github.com/nme22/DateNightApp" href="https://github.com/nme22/DateNightApp" target="_blank" class="badge badge-warning">Project 2</a>
+                </div>
+
+                <div class="col">
+                    <img src="https://via.placeholder.com/200" alt="Note-taker" class="rounded mx-auto d-block demo-img">
+                    <a href="https://github.com/nme22/Note-taker" target="_blank" class="badge badge-warning">Note Taker</a>
+                </div>
+
+                <div class="col">
+                    <img src="https://via.placeholder.com/200" alt="README-Generator" class="rounded mx-auto d-block demo-img">
+                    <a href="https://github.com/nme22/README-Generator" target="_blank" class="badge badge-warning">ReadMe Generator</a>
+                </div>
             </div>
-            <div class="container">
-                <img src="https://via.placeholder.com/200">
-            </div>
-            <div class="container">
-                <img src="https://via.placeholder.com/200">
-            </div>
-            <div class="container">
-                <img src="https://via.placeholder.com/200">
-            </div>
-            
                 
 
         </section>
     
         <aside>
-            <h2 id="About me"><u>About me</u></h2>
             <br>
+            <br>
+            <h2 id="About me"><u class="badge badge-secondary">About me</u></h2>
+            <br>
+          
                 <div>
                     <!-- july -4th pathing from images file wasn't uploading properly. As a result, the image address was copied from the facebook page.  -->
-                    <img src="https://scontent.fewr1-6.fna.fbcdn.net/v/t1.0-9/142276688_4014998048520117_5998950829911969368_n.jpg?_nc_cat=102&ccb=2&_nc_sid=09cbfe&_nc_ohc=yVZZEkz_RYsAX-UE8_L&_nc_ht=scontent.fewr1-6.fna&oh=6236295d54117c9dbc161e641dae3866&oe=603FD3FE" alt="Navid Ebrahimi" class="aside-img">
+                    <img src="./images/july-4th.jpg" alt="Navid Ebrahimi" class="aside-img">
                     <p>Welcome to the page! My name is Navid Ebrahimi and I'm a first generation Iranian American developer! My introduction into coding was recommended by a friend, Domitrius Clark. He believed that my ability and personal qualities would make a great web developer. As a first taste, Domitrius recommended intro's to HTMl through <a href="https://www.freecodecamp.org/">Freecodecamp.org</a>.
                     There I caught fire coding. Something that was vauge and unknown became interesting, challenging, and i kept finding myself wanting to practice it more and more! Before i knew it i had done over 300 hours of HTML challenges and an addtional 300 hours of CSS challenges. The excitement of learning new material and applying different visual effects gave a sense of pride in my work.
                     It was then that i knew i wanted to pursue a career in the tech industry. With aspirations of becoming a senior developer, i entered the Rutger's Bootcamp to further my coding journey. I'm aiming to become the right person for the job by becoming a full stack developer! Feel free to reach out to me via the contact options below!
@@ -69,30 +85,30 @@
     </main>
 
     
-    <footer>
+    <footer class="row">
         <!-- Moved H3 outside of UL to not absorb flexbox properties -->
-        <h3 id="Contact info">Contact info: </h3>
+        <h3 id="Contact info" class="badge badge-secondary">Contact info: </h3>
         <ul>
-            <li>
+            <li class="col">
                 <!-- Added tel: to contact info for accessibility with mobile devices -->
-                <a href="tel:+6464685507">(646) 468-5507</a>
+                <a href="tel:+6464685507" class="badge badge-secondary">(646) 468-5507</a>
             </li>
 
-            <li>
-                <a href="#">navidmebrahimi22@gmail.com</a>
+            <li class="col">
+                <a href="#" class="badge badge-secondary">navidmebrahimi22@gmail.com</a>
             </li>
-            <li>
+            <li class="col">
                 <!-- Logo's photo address copied and placed into img tags -->
                 <!-- Facebook link will open in a new window -->
-                <img src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=20'&h=20">  <a href="https://www.facebook.com/navid.ebrahimi.10/" target="_blank">Facebook</a>
+                <img src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=20'&h=20">  <a href="https://www.facebook.com/navid.ebrahimi.10/" target="_blank" class="badge badge-secondary">Facebook</a>
             </li>
-            <li>
+            <li class="col">
                 <!-- Github link will open in a new window -->
-               <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png?"> <a href="https://github.com/nme22 " target="_blank">Github</a>
+               <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png?"> <a href="https://github.com/nme22 " target="_blank" class="badge badge-secondary">Github</a>
             </li>
-            <li>
+            <li class="col">
                 <!-- Linkedin link will open in a new window -->
-               <img src="https://image.flaticon.com/icons/png/512/174/174857.png"> <a href="https://www.linkedin.com/in/navid-ebrahimi-70b983204/" target="_blank">Linkedin</a>
+               <img src="https://image.flaticon.com/icons/png/512/174/174857.png"> <a href="https://www.linkedin.com/in/navid-ebrahimi-70b983204/" target="_blank" class="badge badge-secondary">Linkedin</a>
             </li>
         </ul>
     </footer>

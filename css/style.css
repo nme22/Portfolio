@@ -1,18 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    
+
 }
-html, body {
+
+html,
+body {
     height: 100%;
 }
+
 /* Sets the background color to a fading effect from black to orange to grey */
 body {
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(237,158,10,1) 37%, rgba(166,165,165,1) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(237, 158, 10, 1) 37%, rgba(166, 165, 165, 1) 100%);
     display: flex;
     flex-direction: column;
 }
+
 /* Pseudo class properties set to anchor tags
     When the page loads the anchor tags are black
     When a user hovers over the anchor the color changes to blue
@@ -21,40 +25,47 @@ body {
 a:link {
     color: black;
 }
-a:hover{
+
+a:hover {
     color: blue;
 }
-a:active{
-    color:grey
+
+a:active {
+    color: grey
 }
+
 /* set the nav element to a flexbox so the children of nav respond to flexbox properties*/
 nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
     float: right;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(237,158,10,1) 37%, rgba(166,165,165,1) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(237, 158, 10, 1) 37%, rgba(166, 165, 165, 1) 100%);
     border-style: solid;
     border-color: black;
     font-size: 20px;
 }
-nav h1{
+
+nav h1 {
     font-style: italic;
     color: orange;
 }
+
 /* set list-style to none to get rid of bullet points */
-nav ul li{
+nav ul li {
     list-style-type: none;
     width: 0 auto;
     float: left;
 }
-nav ul li a{ 
+
+nav ul li a {
     display: block;
     width: 150px;
     height: 40px;
     color: black;
     font-size: 25px;
 }
+
 /* to use imported graphic, set the background image to the URL of the desired image. background graphic = hero image */
 .background-graphic {
     height: 300px;
@@ -62,63 +73,66 @@ nav ul li a{
     margin-bottom: 25px;
     background-image: url(https://thumbs.dreamstime.com/b/desktop-source-code-technology-background-developer-programer-coding-programming-wallpaper-computer-language-virus-124934719.jpg);
     background-size: cover;
-    background-position:top;
+    background-position: top;
     border-style: solid;
 }
+
 /*set the main element to a flexbox so the children of main respond to flexbox properties  */
-main{
-    display:flex;
+main {
+    display: flex;
     flex: 1 0 auto;
     flex-direction: column;
-   
+
 }
-main h2{
+
+main h2 {
     text-align: center;
 }
-main section{
+
+main section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.container{
-    flex-direction: row;
-    height: 200px;
-    width: 200px;
-    border-style: solid;
-    border-color: grey;
+
+
+
+.demo-img {
+    max-height: 200px;
+    max-width: 200px;
 }
+
 /* set the aside element to a flexbox so the children of aside respond to flexbox properties */
-aside{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;    
-}
+
+
 /* aside div set to flexbox so that image and its contents can be arranged using flexbox properties*/
-aside div{
-    display:flex;
+aside div {
+    display: flex;
     justify-content: center;
-    
+
 }
-aside p{
-    justify-self:right;
+
+aside p {
+    justify-self: right;
     width: 35%;
     text-align: left;
     font-size: 19px;
- 
+
 }
-.aside-img{
-    height:400px;
-    width:400px;
-    max-width:100%;
-    padding-right: 10px;   
+
+.aside-img {
+    height: 400px;
+    width: 400px;
+    max-width: 100%;
+    padding-right: 10px;
 }
+
 /* set the footer element to a flexbox so the children of footer respond to flexbox properties */
 footer {
     display: flex;
     width: 100%;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(237,158,10,1) 37%, rgba(166,165,165,1) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(237, 158, 10, 1) 37%, rgba(166, 165, 165, 1) 100%);
     border-style: solid;
     border-width: 1px;
     font-size: 20px;
@@ -126,26 +140,29 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    
+
 }
+
 footer h3 {
     margin-right: 8px;
     font-size: 20px;
-    font-style:italic;
-    color:black;
+    font-style: italic;
+    color: black;
 }
-footer ul{
+
+footer ul {
     display: flex;
     width: 70%;
     list-style: none;
-    justify-content: space-around;    
+    justify-content: space-around;
 }
 
-footer ul a{
-    color:black;
+footer ul a {
+    color: black;
 }
+
 /* Set height and width to logo imgs in footer */
-footer ul img{
+footer ul img {
     height: 20px;
     width: 20px;
 }
